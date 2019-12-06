@@ -49,10 +49,11 @@ const DashBoard = props => {
     return(
         <>
         <div className="dashbord-wraper">
+            <h2>Baseball counter</h2>
             <button onClick={handleClick}>strike</button>
-            <button onClick={handleClick}>ball</button>
-            <button onClick={handleClick}>foul</button>
-            <button onClick={handleClick}>hit</button>
+            <button id='ball' onClick={handleClick}>ball</button>
+            <button id='foul' onClick={handleClick}>foul</button>
+            <button id='hit' onClick={handleClick}>hit</button>
         </div>
         <Display data={values} />
         </>
